@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>捕鱼达人-人人都是捕鱼达人</title>
+    <meta name="description" content="这里是小咖啡在2017年年尾完成的一款H5小游戏，欢迎小伙伴玩耍">
+    <meta name="keywords" content="捕鱼达人">
+    <meta name="author" content="小咖啡">
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+    <link type="image/x-icon" rel="shortcut icon" href="/img/icon.ico" />
+</head>
+<body>
+    <div id="mainCanvasBox">
+        <div id="startPage">
+            <img id="logo" src="img/logo.png">
+            <div id="loading" style="display: block">加载中...</div>
+            <div id="start" style="display: none">
+                <img id="startButton" src="img/startButton.png" >
+            </div>
+        </div>
+        <canvas id="mainCanvas" style="display: none"></canvas>
+    </div>
+    <audio id="bgmGame" loop>
+        <source src="raw/bgm_game.mp3">
+        <source src="raw/bgm_game.ogg">
+        <source src="raw/bgm_game.wav">
+    </audio>
+
+    <audio id="bgmCoin">
+        <source src="raw/bgm_coin.mp3">
+        <source src="raw/bgm_coin.ogg">
+        <source src="raw/bgm_coin.wav">
+    </audio>
+</body>
+<script src="js/data.js"></script>
+<script src="js/draw.js"></script>
+</html>
